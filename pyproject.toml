@@ -1,0 +1,23 @@
+[project]
+name = "ai-engineering"
+version = "0.1.0"
+description = "AI Engineering from Scratch — isolated development environment"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "jupyter>=1.0",
+    "scipy>=1.14",
+    "scikit-learn>=1.5",
+    "pandas>=2.2",
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "torchaudio>=2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
