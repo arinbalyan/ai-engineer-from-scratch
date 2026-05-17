@@ -16,6 +16,9 @@ dependencies = [
     "torchaudio>=2.4",
     "datasets>=3.0",
     "huggingface-hub>=0.26",
+    "tensorboard>=2.18",
+    "line-profiler>=4.2",
+    "memory-profiler>=0.61",
 ]
 
 [dependency-groups]
