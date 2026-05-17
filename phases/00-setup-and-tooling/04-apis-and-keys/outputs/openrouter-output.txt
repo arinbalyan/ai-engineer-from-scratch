@@ -1,0 +1,11 @@
+=== OpenRouter API Calls ===
+
+Model: openai/gpt-oss-120b:free
+
+1. Using the OpenAI-compatible SDK:
+SDK response: A neural network is a computational model inspired by the brain’s interconnected neurons, consisting of layers of nodes that transform inputs through weighted connections and nonlinear activation functions to learn patterns and make predictions.
+Tokens used: 76 in, 52 out
+
+2. Using raw HTTP:
+Raw HTTP response: A neural network is a computational model composed of interconnected layers of simple processing units (neurons) that learn to map inputs to outputs by adjusting their connection weights through data‑driven training.
+Tokens used: 76 in, 53 out

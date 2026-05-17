@@ -1,0 +1,11 @@
+=== HuggingFace Inference API Calls ===
+
+Model: deepseek-ai/DeepSeek-V4-Pro
+
+1. Using the HuggingFace SDK:
+SDK response: A neural network is a computational model inspired by the brain, composed of layers of interconnected artificial neurons that process data by applying learned weights and activation functions to recognize patterns and make predictions
+Tokens used: 13 in, 256 out
+
+2. Using raw HTTP:
+Raw HTTP: Model 'google/flan-t5-small' returned 404 (common on free tier)
+Tip: Use the SDK for automatic provider routing and retries.
