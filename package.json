@@ -3,8 +3,21 @@
   "version": "0.1.0",
   "description": "AI Engineering from Scratch — TypeScript/Node.js workspace",
   "private": true,
-  "packageManager": "pnpm@10.33.2",
+  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm run dev:python",
+    "dev:python": "uv run jupyter lab --no-browser",
+    "dev:node": "pnpm exec tsx watch languages/node/index.ts",
+    "dev:rust": "cd languages/rust && cargo watch -x run",
+    "dev:julia": "cd languages/julia && julia --project=. -i",
+    "start": "pnpm run dev",
+    "verify": "uv run phases/00-setup-and-tooling/01-dev-environment/code/verify.py",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "tsx": "^4.22.1"
   }
 }
