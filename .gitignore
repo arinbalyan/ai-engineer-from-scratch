@@ -10,6 +10,17 @@ wheels/
 # Virtual environments
 .venv
 
+# Node.js
+node_modules/
+
+# Rust
+languages/rust/target/
+
+# Julia
+languages/julia/Manifest.toml
+languages/julia/*.ji
+languages/julia/compiled/
+
 # Jupyter
 .ipynb_checkpoints/
 
