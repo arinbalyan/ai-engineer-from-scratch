@@ -120,6 +120,16 @@ or_token = get_openrouter_key()
 
 Add your keys once, all lessons use them. To add a new key, edit `~/.config/ai-eng/secrets.json` and add a getter to `secrets.py`.
 
+### Default Model
+
+We use OpenRouter's free tier with `openai/gpt-oss-120b:free`. Change the model in `~/.config/ai-eng/secrets.json`:
+
+```json
+{
+  "default_model": "openai/gpt-oss-120b:free"
+}
+```
+
 ## Notes
 
 See the `notes/` directory for findings, gotchas, and observations from working through the curriculum.

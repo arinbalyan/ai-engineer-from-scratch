@@ -34,3 +34,7 @@ def get_huggingface_key() -> str:
 
 def get_openrouter_key() -> str:
     return get_key("openrouter")
+
+
+def get_default_model() -> str:
+    return get_key("default_model")
