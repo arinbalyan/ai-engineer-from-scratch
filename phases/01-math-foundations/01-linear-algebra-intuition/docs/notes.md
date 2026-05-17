@@ -15,6 +15,7 @@ From-scratch Vector and Matrix classes covering the full pipeline:
 | 9 | Gram-Schmidt orthogonalization | Pure Python |
 | 10 | NumPy equivalents (linalg.norm, matrix_rank, QR) | NumPy |
 | 11 | PyTorch tensors with autodiff | PyTorch |
+| 12 | Julia native vectors/matrices, built-in rank and QR | Julia |
 
 ## Key Intuitions
 
@@ -38,4 +39,7 @@ From-scratch Vector and Matrix classes covering the full pipeline:
 
 ```bash
 uv run phases/01-math-foundations/01-linear-algebra-intuition/code/linear_algebra_intuition.py
+
+# Julia
+julia --project=languages/julia phases/01-math-foundations/01-linear-algebra-intuition/code/linear_algebra_intuition.jl
 ```
