@@ -38,6 +38,16 @@ Thumbs.db
 .env
 .env.local
 
+# Model checkpoints and large binaries
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.onnx
+checkpoints/
+models/
+
 # Agent memory and planning
 .agents/
 AGENTS.md
