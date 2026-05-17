@@ -37,3 +37,7 @@ Thumbs.db
 # Environment files (never commit secrets)
 .env
 .env.local
+
+# Agent memory and planning
+.agents/
+AGENTS.md
