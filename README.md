@@ -97,6 +97,29 @@ languages/
 notes/            - personal findings and observations
 ```
 
+## API Keys and Secrets
+
+Secrets live in `~/.config/ai-eng/secrets.json` — never in the repo.
+
+```json
+{
+  "huggingface": "hf_...",
+  "openrouter": "sk-or-..."
+}
+```
+
+A helper module at `languages/python/utils/secrets.py` reads them:
+
+```python
+import sys; sys.path.insert(0, "languages/python")
+from utils.secrets import get_huggingface_key, get_openrouter_key
+
+hf_token = get_huggingface_key()
+or_token = get_openrouter_key()
+```
+
+Add your keys once, all lessons use them. To add a new key, edit `~/.config/ai-eng/secrets.json` and add a getter to `secrets.py`.
+
 ## Notes
 
 See the `notes/` directory for findings, gotchas, and observations from working through the curriculum.
